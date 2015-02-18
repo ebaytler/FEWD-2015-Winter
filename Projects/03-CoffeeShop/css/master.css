@@ -1,0 +1,293 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2015 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Latinotype
+ * License URL: http://www.fontspring.com/licenses/latinotype/webfont
+ *
+ *
+ */
+
+
+
+/*@font-face {
+    font-family: 'sanchezitalic';
+    src: url('Sanchez-italic-webfont.eot');
+    src: url('Sanchez-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sanchez-italic-webfont.woff2') format('woff2'),
+         url('Sanchez-italic-webfont.woff') format('woff'),
+         url('Sanchez-italic-webfont.ttf') format('truetype'),
+         url('Sanchez-italic-webfont.svg#sanchezitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*/
+
+@font-face {
+    font-family: 'sanchezregular';
+    src: url('Sanchez-Regular-webfont.eot');
+    src: url('Sanchez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sanchez-Regular-webfont.woff2') format('woff2'),
+         url('Sanchez-Regular-webfont.woff') format('woff'),
+         url('Sanchez-Regular-webfont.ttf') format('truetype'),
+         url('Sanchez-Regular-webfont.svg#sanchezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main: Applied to everything*/
+body {
+	color:#666;
+	font-size:16px;
+	line-height:1.6;
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;}
+
+/* Type */
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	font-family:'sanchezregular', Georgia, Times New Roman, serif;
+	font-weight: normal;
+	line-weight: 1.2;
+	margin: 25px 0px;
+	color:#111;
+}
+h1{ font:size:60px
+	}
+	
+h2 { color:#000;
+	font-size: 32px;
+}	
+
+h3 {color: #222;
+	font-size:26px;
+	}
+p {margin:15px 0}
+
+/* Container */	
+
+.container {
+	width: 620px;
+	margin: 0 auto;
+	}
+	
+.container_wide { width: 900px}
+
+/* Split/ List */
+
+.split_left, 
+.split_right{
+	width:45%;
+	}
+	
+.split_left {
+	float:left;
+	}
+	
+.split_right {
+	float:right;
+	}
+		
+/* Bar */
+.bar {		
+	background: #fff;
+	clear: both;
+	overflow: hidden;
+	padding: 100px 0;
+	width:100%;
+	}		
+.bar_gold{
+	background-color:#AC8420;
+	}
+	
+.bar_black{
+	background-color:#111;
+	color:#FFF;}	
+	
+	/* Clears */
+.clear {
+	clear:both;
+	}
+
+.clearfix:after {
+	content:'';
+	clear:both;
+	display:block;
+	}	
+	
+	
+/* Header */
+	
+.header {
+	background: #111 url(../images/header.jpg) no-repeat center;
+	background-size: cover;
+	padding: 150px 0 125px;
+	text-align:center;
+	}
+			
+.logo {
+	color:#FFF;
+	font-size:60px;
+	}
+	
+.logo:before {
+	background: url(../images/logo_large.png) no-repeat center;
+	content:'';
+	display:block;
+	height:100px;
+	width:100px;
+	margin: 0 auto 30px;
+	}
+	
+.intro {
+	color:#CCC;
+	font-family: 'Open Sans', Arial, Helvetica, sans serif;
+	font-size: 22px;
+	margin:0 auto;
+	line-height: 140%;
+	padding: 0px 0 0 20px;
+	}
+	
+/* Menu List */
+
+.coffeemenu { 
+	color:#FFF;
+	padding: 65px 0;
+	}
+
+.coffeemenu h2{ 
+	margin: 0px 0 20px;
+	text-align: center;
+}
+.menu_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+		
+.menu_set{
+	padding: 30px 0;
+	}	
+.menu_item {
+	color:#FFF;
+	font-family: 'Open Sans', Arial, Helvetica, sans serif;
+	font-size: 16px;
+	padding:10px 0 15px;
+	border-bottom:2px solid #9B761C;
+	}
+.price{
+	color:#DECC9C;
+	float:right;
+	}
+	
+.menu_last{
+	border-bottom:none;
+	}
+	
+/* Location */
+
+.location h3 {
+	margin: 10px 0 20px;
+	}
+
+/* Button */	
+
+.button {
+	color:#AC8420;
+	font-family: 'Open Sans', Arial, Helvetica, sans serif;
+	font-size: 16px;
+	margin:10px 0;
+	padding:10px 25px ;
+	text-decoration:none;
+	border:2px solid #AC8420;
+		display: inline-block;
+		line-height: 1;
+	}
+	
+/* Picture */
+.picture img {
+	width: 100%;
+	display: block;
+	}
+.picture {
+	margin: 0;
+	padding: 0;}	
+		
+/* Footer */
+.footer{
+	color:#FFF;
+	text-transform: uppercase;
+	padding:75px 0;
+	font-size:12px;
+	}
+		
+.footer_copyright,
+.footer_nav {
+	margin: 15px 0 0;
+	}	
+	
+.footer_copyright{
+	float:left;
+	}	
+	
+.footer_nav{
+	float:right;
+	color:#FFF;
+	letter-spacing: 2px;
+	}
+.footer_nav_item{
+	color:#FFF;
+	display: inline-block;
+	text-decoration: none;
+	}	
+.footer_nav_item:hover {
+		color: #AC8420;
+	}
+.footer_nav_item:after {
+		content: '\b7';
+		padding-left: 3px;
+		}
+			
+.footer_nav_item:hover:after{
+	color:#FFF}	
+	
+.footer_nav_last:after {
+		display: none;
+	}
+	
+.footer:after {
+	background: url(../images/logo_small.png);
+	content: '';
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	width: 50px;
+}
+
+/*.footer-icon {
+	height: 50px;
+	width: 50px;
+	margin:0 auto;
+}*/
+	
