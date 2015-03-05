@@ -5,7 +5,7 @@
 
 		<style>
 			[class*="fs-cell"] {
-				background: rgba(26, 104, 173, 0.25);
+				background: rgba(26, 104, 173, .25);
 				overflow: hidden;
 				color: #fff;
 				font-size: 12px;
@@ -15,10 +15,34 @@
 				text-transform: uppercase;
 			}
 		</style>
-	</head>
-	<body>
 
-		<div class="fs-cell"></div>
+		<link href="components/normalize-css/normalize.css" rel="stylesheet">
+		<link href="components/formstone/dist/css/grid.css" rel="stylesheet">
+
+	</head>
+	<body class="fs-grid">
+
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-half">Hello little friend</div>
+			<div class="fs-cell fs-lg-half">Hello little friend</div>
+
+			<div class="fs-cell fs-all-third">Hello little friend</div>
+			<div class="fs-cell fs-all-third">Hello little friend</div>
+			<div class="fs-cell fs-all-third">Hello little friend</div>
+
+
+			<div class="fs-cell fs-lg-4">side</div>
+			<div class="fs-cell fs-lg-8">CONTENT</div>
+
+
+			<div class="fs-cell fs-lg-2">side</div>
+			<div class="fs-cell fs-lg-6 fs-lg-push-2">CONTENT</div>
+		</div>
+
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-6">Hello little friend</div>
+			<div class="fs-cell fs-lg-half">Hello little friend</div>
+		</div>
 
 	</body>
 </html>
