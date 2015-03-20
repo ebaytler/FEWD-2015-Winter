@@ -1,50 +1,128 @@
 <!doctype html>
-<html>
+<html class="no-js">
 
 <head>
   <title>PicticiousPro</title>
   <meta charset="utf-8">
-  <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic|Roboto+Condensed:300" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 
-  
   <link href="components/normalize-css/normalize.css" rel="stylesheet">
   <link href="components/formstone/dist/css/grid.css" rel="stylesheet">
+  <link href="components/formstone/dist/css/lightbox.css" rel="stylesheet">
+  <link href="components/animate.css/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/master.css">
+
+		<script src="components/modernizr/modernizr.js"></script>
+
+		<script src="components/jquery/dist/jquery.js"></script>
+		<script src="components/formstone/dist/js/core.js"></script>
+		<script src="components/formstone/dist/js/transition.js"></script>
+		<script src="components/formstone/dist/js/lightbox.js"></script>
+        <script src="components/modernizr/modernizr.js"></script>
+        <script src="components/wowjs/dist/wow.js"></script>
+
+		<script src="js/site.js"></script>
+
+		<!--[if IE 8]>
+			<link href="components/formstone/dist/css/grid.ie.css"  rel="stylesheet">
+			<link href="css/site-ie.css"  rel="stylesheet">
+		<![endif]-->
 </head>
 
 <body class="fs-grid">
-	<header class="fs-row header bar">
-    	<div class="fs-grid-width-lg">
- 	 		<a href="#" class="fs-cell fs-lg-8 logo"><strong>Picticious</strong>Pro</a>
- 	 		<div class="fs-cell fs-lg-4"> </div>
-			<h1>Nice Shot</h1>
-		<p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-		<a class="pure-button pure-button-primary" href="#">A Primary Button</a>
-		<button class="pure-button pure-button-primary">A Primary Button</button>
-		<button class="button-white">Download Now</button></div>
-</header>
-<section class"bar bar-white">
-<div class="fs-row">
-  <div class="fs-cell fs-all-third">
-    <h4 class="main-three main-tag">Tag It All</h4>
-    <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit aliquet felis, quis.</p>
-  </div>
-  <div class="fs-cell fs-all-third">
-    <h4 class="main-three main-cloud">Cloud Sync</h4>
-    <p class="main-description">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
-  </div>
-  <div class="fs-cell fs-all-third">
-    <h4 class="main-three main-photo">Photo Map</h4>
-    <p class="main-description">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Ligula porta felis.</p>
-  </div>
-</div>
-<h3>Capture Life</h3>
-<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-<h2>Download Now</h2>
-<p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol. </p>
-Support
-Privacy & Terms
-© 2014 PicticiousPro
-</section>
+	<nav class="fs-row">
+		<div class="logo wow tada"><strong>Pictitious</strong>Pro</div>
+	</nav>
+	<header>
+		<div class="fs-row">
+			<div class="phone-pic fs-cell fs-right fs-sm-hide fs-md-half fs-lg-half">
+			 	<img src="images/intro_phone.png" alt="phone picture"/>
+			 </div>
+			<div class="intro fs-cell fs-md-half fs-lg-half">
+				<div class="text">
+				 	<h1>Nice Shot</h1>
+				 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nihb euismod tincidunt ut laoreet dolore magna aliquiam.</p>
+				 	<a href="" class="cta-button">Download Now</a>
+				</div>
+			 </div> 
+		</div>
+			
+	</header>
+	
+	<main>
+		<section class="services fs-row">
+			<article class="fs-cell fs-sm-12 fs-md-third fs-lg-third">
+				<div class="service">
+					<h2 class="tag">Tag It All</h2>
+					<p>Lorem Ipsom Dolor Sit Amet, Consectetur Adispiscing Elit. Aliwquam Suscipit Aliquet Felis, Quis.</p>
+				</div>
+			</article>
+			<article class="fs-cell fs-sm-12 fs-md-third fs-lg-third">
+				<div class="service">
+					<h2 class="cloud">Cloud Sync</h2>
+					<p>Nullam lectus est, euismod eu mi ut, faucibus vehicula metus. Curabitur sodales, augue elementum vestibulum aliquet.</p>
+				</div>
+			</article>
+			<article class="fs-cell fs-sm-12 fs-md-third fs-lg-third">
+				<div class="service">
+					<h2 class="mapit">Photo Map</h2>
+					<p>Phasellus sit amet nunc elementum, volutpat eros in, venenatis augue. Nullam sed interdum arcu, vitae euismod diam. </p>
+				</div>
+			</article>
+		</section>
+		
+		<section class="gallery-wrap" style="background:#eee;">
+			<div class="fs-row">
+			<aside class="fs-cell fs-lg-3">
+				<h3>Capture Life</h3>
+				<p> Pellentesque mauris urna, ultricies elementum iaculis sit amet, accumsan eget lorem. Fusce tincidunt accumsan vulputate. Mauris faucibus porta massa vel commodo.</p>
+			</aside>
+			<section class="featured fs-cell fs-row fs-sm-9 fs-md-9 fs-lg-9">
+				<a href="images/photos/01.jpg" class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_01.jpg" alt=""></a>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_02.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_03.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_04.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_05.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_06.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_07.jpg" alt=""></div>
+				<div class="fs-cell fs-sm-half fs-md-third fs-lg-3 gallery_item js-lightbox" data-lightbox-gallery="photo_gallery"><img src="images/photos/thumb_08.jpg" alt=""></div>
+			</section>
+			</div>
+		</section>
+		
+		<section class="cta-foot fs-row">
+			<div>
+				<h2 class="heading">Download Now</h2>
+				<p>Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.</p>
+			</div>	
+				
+			<div class="downloads">
+				<a href="#" class="button appstore">Apple Store</a>
+				<a href="#" class="button google"></a>
+				<a href="#" class="button amazon"></a>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="fs-row" >
+		<div class="social">
+			<a href="#" class="facebook"></a>
+			<a href="#" class="twitter"></a>
+			<a href="#" class="googleplus"></a>
+		</div>
+		<div class="signature">
+			<a href="#" class="footer_link">Support</a>
+			<a href="#" class="footer_link">Privacy &amp; Terms</a>
+			<p>&copy; 2014 PicticiousPro</p>
+		</div>
+		
+	</footer>
+	
+    <script>
+      (function(){if(typeof FSGridBookmarklet==='undefined'){document.body.appendChild(document.createElement('script')).src='http://beta.formstone.it/js/bookmarklet/grid.js';}else{FSGridBookmarklet();}})();
+    </script>
+  </body>
+</html>
 </body>
 </html>
